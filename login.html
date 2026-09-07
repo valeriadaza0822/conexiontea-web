@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iniciar sesión — ConexiónTEA 2.0</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="auth-page">
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="ConexiónTEA 2.0">
+      <span class="brand-mark">❤</span>
+      <span>Conexión<span>TEA</span> <small>2.0</small></span>
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="index.html#que-es">¿Qué es ConexiónTEA?</a>
+      <a href="index.html#accesibilidad">Accesibilidad</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <a class="btn secondary small" href="registro.html">Crear cuenta</a>
+  </header>
+
+  <main class="auth-main">
+    <section class="auth-card">
+      <span class="eyebrow">BIENVENIDO DE NUEVO</span>
+      <h1>Iniciar sesión</h1>
+      <p class="auth-sub">Entra para acceder a tu panel personal.</p>
+
+      <form id="loginForm" novalidate>
+        <label>Correo electrónico
+          <input type="email" name="email" id="loginEmail" placeholder="ejemplo@correo.com" required>
+        </label>
+        <label>Contraseña
+          <input type="password" name="password" id="loginPassword" placeholder="••••••••" required>
+        </label>
+        <button class="btn primary" type="submit">Iniciar sesión</button>
+        <small id="formMessage" role="status"></small>
+      </form>
+
+      <p class="auth-alt">¿No tienes cuenta? <a href="registro.html">Crear cuenta</a></p>
+      <p class="auth-alt muted-link"><a href="dashboard.html">Entrar en modo demo →</a></p>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <div class="brand"><span class="brand-mark">❤</span><span>Conexión<span>TEA</span> <small>2.0</small></span></div>
+    <p>Diseñado con accesibilidad, claridad y empatía.</p>
+    <span>© 2026 ConexiónTEA 2.0</span>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="auth.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ConexiónTEA 2.0 - Plataforma accesible e inclusiva." />
+  <title>ConexiónTEA 2.0</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="ConexiónTEA 2.0">
+      <span class="brand-mark">❤️</span>
+      <span>Conexión<span>TEA</span> <small>2.0</small></span>
+    </a>
+
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#que-es">¿Qué es ConexiónTEA?</a>
+      <a href="#accesibilidad">Accesibilidad</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <button class="lang-btn" id="langBtn" type="button" aria-label="Cambiar idioma">ES⌄</button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow">PLATAFORMA ACCESIBLE E INCLUSIVA</span>
+        <h1>ConexiónTEA 2.0<br><strong>comprende, conecta.</strong></h1>
+        <p>
+          Una plataforma pensada para impulsar la comunicación, autonomía
+          y bienestar de personas con TEA, con herramientas simples y personalizables.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="login.html">Iniciar sesión</a>
+          <a class="btn secondary" href="registro.html">Crear cuenta</a>
+        </div>
+
+        <div class="mini-features">
+          <div><span>💬</span>Comunicación<br>adaptativa</div>
+          <div><span>🧩</span>Pictogramas<br>personalizados</div>
+          <div><span>🔊</span>Texto<br>a voz</div>
+          <div><span>📅</span>Rutinas y<br>actividades</div>
+          <div><span>📈</span>Seguimiento<br>de progreso</div>
+          <div><span>♿</span>Diseño<br>accesible</div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-label="Ilustración decorativa">
+        <div class="blob blob-a"></div>
+        <div class="blob blob-b"></div>
+        <div class="person">
+          <div class="hair"></div>
+          <div class="face"><span class="eye e1"></span><span class="eye e2"></span><span class="smile"></span></div>
+          <div class="hoodie"></div>
+          <div class="tablet"><span>● ● ●</span><b>¡Hola!</b></div>
+          <div class="headphones"></div>
+        </div>
+        <div class="puzzle p1">✦</div>
+        <div class="puzzle p2">✚</div>
+        <div class="leaf">🌿</div>
+      </div>
+    </section>
+
+    <section class="section" id="que-es">
+      <div class="section-heading">
+        <span class="eyebrow">TODO EN UN SOLO LUGAR</span>
+        <h2>Una experiencia diseñada para acompañar</h2>
+        <p>Interfaces claras, lenguaje visual y herramientas que se adaptan a diferentes necesidades.</p>
+      </div>
+
+      <div class="cards four">
+        <article class="card">
+          <div class="icon purple">💬</div>
+          <h3>Comunicación</h3>
+          <p>Mensajes visuales, pictogramas y texto a voz para facilitar la expresión.</p>
+        </article>
+        <article class="card">
+          <div class="icon mint">🧩</div>
+          <h3>Pictogramas</h3>
+          <p>Biblioteca organizada por personas, emociones, lugares, objetos y acciones.</p>
+        </article>
+        <article class="card">
+          <div class="icon orange">📅</div>
+          <h3>Rutina diaria</h3>
+          <p>Actividades y recordatorios para estructurar el día de forma sencilla.</p>
+        </article>
+        <article class="card">
+          <div class="icon blue">📈</div>
+          <h3>Progreso</h3>
+          <p>Indicadores visuales para observar avances y mantener una comunicación clara.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section accessibility" id="accesibilidad">
+      <div class="section-heading">
+        <span class="eyebrow">ACCESIBILIDAD</span>
+        <h2>Personaliza tu experiencia</h2>
+        <p>Prueba controles sencillos para adaptar la interfaz.</p>
+      </div>
+
+      <div class="access-grid">
+        <div class="access-card">
+          <h3>Tamaño de texto</h3>
+          <div class="access-buttons">
+            <button data-size="small" type="button">A</button>
+            <button data-size="normal" class="selected" type="button">A</button>
+            <button data-size="large" type="button">A</button>
+          </div>
+        </div>
+        <div class="access-card">
+          <h3>Tema visual</h3>
+          <div class="theme-buttons">
+            <button data-theme="light" class="selected" type="button">☀ Claro</button>
+            <button data-theme="relaxed" type="button">◉ Relajante</button>
+            <button data-theme="dark" type="button">● Oscuro</button>
+          </div>
+        </div>
+        <div class="access-card">
+          <h3>Preferencias</h3>
+          <label class="switch-row">Reducir animaciones <input type="checkbox" id="motionToggle"><span class="switch"></span></label>
+          <label class="switch-row">Lectura de pantalla <input type="checkbox" checked><span class="switch"></span></label>
+          <label class="switch-row">Vibraciones <input type="checkbox" checked><span class="switch"></span></label>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <div class="brand"><span class="brand-mark">❤️</span><span>Conexión<span>TEA</span> <small>2.0</small></span></div>
+    <p>Diseñado con accesibilidad, claridad y empatia.</p>
+    <span>© 2026 ConexiónTEA 2.0</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi panel - ConexiónTEA 2.0</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="ConexiónTEA 2.0">
+      <span class="brand-mark">❤️</span>
+      <span>Conexión<span>TEA</span> <small>2.0</small></span>
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="index.html#que-es">¿Qué es ConexiónTEA?</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <a class="btn secondary small" id="logoutBtn" href="index.html">Cerrar sesión</a>
+  </header>
+
+  <main class="dashboard-page">
+    <section class="dashboard-section" id="panel">
+      <div class="dashboard">
+        <aside class="sidebar">
+          <div class="side-logo">❤️ <b>ConexiónTEA</b></div>
+          <button class="side-item active" data-panel="comunicacion" type="button">💬 Comunicación</button>
+          <button class="side-item" data-panel="pictogramas" type="button">🧩 Pictogramas</button>
+          <button class="side-item" data-panel="actividades" type="button">🎯 Actividades</button>
+          <button class="side-item" data-panel="rutina" type="button">⏱ Rutina diaria</button>
+          <button class="side-item" data-panel="calendario" type="button">📅 Calendario</button>
+          <button class="side-item" data-panel="progreso" type="button">📈 Progreso</button>
+          <button class="side-item" data-panel="chatFamiliares" type="button">👨‍👩‍👧 Chat familiares</button>
+          <button class="side-item" data-panel="chatProfesional" type="button">🩺 Chat profesional</button>
+          <button class="side-item" data-panel="chatPares" type="button">👫 Chat con pares</button>
+          <button class="side-item" data-panel="perfil" type="button">👤 Perfil</button>
+        </aside>
+
+        <div class="dash-main">
+          <div class="dash-top">
+            <div>
+              <span class="muted">Dashboard - Persona con TEA</span>
+              <h3 id="welcome">¡Hola! 👋</h3>
+              <p>¿Qué quieres hacer hoy?</p>
+            </div>
+            <div class="avatar" id="avatar">V</div>
+          </div>
+
+          <div class="quick-grid">
+            <button class="quick-card" data-action="comunicar" type="button"><span>💬</span><b>Comunicación</b><small>Crear mensaje</small></button>
+            <button class="quick-card" data-action="pictogramas" type="button"><span>🧩</span><b>Pictogramas</b><small>Elegir pictograma</small></button>
+            <button class="quick-card" data-action="actividad" type="button"><span>🎯</span><b>Actividades</b><small>Ver pendientes</small></button>
+            <button class="quick-card" data-action="rutina" type="button"><span>⏱</span><b>Rutina diaria</b><small>Ver rutina</small></button>
+          </div>
+
+          <div class="dash-grid">
+            <div class="panel">
+              <div class="panel-head"><h4 id="panelTitle">Comunicación</h4><span>Hoy</span></div>
+              <div id="panelContent"></div>
+            </div>
+
+            <div class="panel progress-panel">
+              <div class="panel-head"><h4>Tu progreso hoy</h4><span class="status">Excelente</span></div>
+              <div class="progress-ring">70<small>%</small></div>
+              <p>¡Vas muy bien!</p>
+              <div class="bars">
+                <div><span>Comunicación</span><i style="width:80%"></i></div>
+                <div><span>Autonomía</span><i style="width:65%"></i></div>
+                <div><span>Rutina</span><i style="width:90%"></i></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section accessibility" id="accesibilidad">
+      <div class="section-heading">
+        <span class="eyebrow">ACCESIBILIDAD</span>
+        <h2>Personaliza tu experiencia</h2>
+        <p>Prueba controles sencillos para adaptar la interfaz.</p>
+      </div>
+
+      <div class="access-grid">
+        <div class="access-card">
+          <h3>Tamaño de texto</h3>
+          <div class="access-buttons">
+            <button data-size="small" type="button">A</button>
+            <button data-size="normal" class="selected" type="button">A</button>
+            <button data-size="large" type="button">A</button>
+          </div>
+        </div>
+        <div class="access-card">
+          <h3>Tema visual</h3>
+          <div class="theme-buttons">
+            <button data-theme="light" class="selected" type="button">☀ Claro</button>
+            <button data-theme="relaxed" type="button">◉ Relajante</button>
+            <button data-theme="dark" type="button">● Oscuro</button>
+          </div>
+        </div>
+        <div class="access-card">
+          <h3>Preferencias</h3>
+          <label class="switch-row">Reducir animaciones <input type="checkbox" id="motionToggle"><span class="switch"></span></label>
+          <label class="switch-row">Lectura de pantalla <input type="checkbox" checked><span class="switch"></span></label>
+          <label class="switch-row">Vibraciones <input type="checkbox" checked><span class="switch"></span></label>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <div class="brand"><span class="brand-mark">❤️</span><span>Conexión<span>TEA</span> <small>2.0</small></span></div>
+    <p>Diseñado con accesibilidad, claridad y empatia.</p>
+    <span>© 2026 ConexiónTEA 2.0</span>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

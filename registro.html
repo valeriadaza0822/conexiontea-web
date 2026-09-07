@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crear cuenta - ConexiónTEA 2.0</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="auth-page">
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="ConexiónTEA 2.0">
+      <span class="brand-mark">❤️</span>
+      <span>Conexión<span>TEA</span> <small>2.0</small></span>
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="index.html#que-es">¿Qué es ConexiónTEA?</a>
+      <a href="index.html#accesibilidad">Accesibilidad</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <a class="btn secondary small" href="login.html">Iniciar sesión</a>
+  </header>
+
+  <main class="auth-main">
+    <section class="auth-card">
+      <span class="eyebrow">EMPIEZA AHORA</span>
+      <h1>Crear cuenta</h1>
+      <p class="auth-sub">Crea tu cuenta para personalizar tu experiencia.</p>
+
+      <form id="registroForm" novalidate>
+        <label>Nombre
+          <input type="text" name="name" id="regName" placeholder="Tu nombre" required>
+        </label>
+        <label>Correo electrónico
+          <input type="email" name="email" id="regEmail" placeholder="ejemplo@correo.com" required>
+        </label>
+        <label>Contraseña
+          <input type="password" name="password" id="regPassword" placeholder="Minimo 6 caracteres" required minlength="6">
+        </label>
+        <label>Rol
+          <select name="role" id="regRole" required>
+            <option value="">Selecciona tu rol...</option>
+            <option value="persona">Persona con TEA</option>
+            <option value="familiar">Familiar / Cuidador</option>
+            <option value="profesional">Profesional</option>
+          </select>
+        </label>
+        <button class="btn primary" type="submit">Crear cuenta</button>
+        <small id="formMessage" role="status"></small>
+      </form>
+
+      <p class="auth-alt">¿Ya tienes cuenta? <a href="login.html">Iniciar sesión</a></p>
+      <p class="auth-alt muted-link"><a href="dashboard.html">Entrar en modo demo →</a></p>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <div class="brand"><span class="brand-mark">❤️</span><span>Conexión<span>TEA</span> <small>2.0</small></span></div>
+    <p>Diseñado con accesibilidad, claridad y empatia.</p>
+    <span>© 2026 ConexiónTEA 2.0</span>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="auth.js"></script>
+</body>
+</html>
